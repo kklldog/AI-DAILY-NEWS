@@ -1,0 +1,10 @@
+[Unit]
+Description=AI News Daily Report (publish only after a matching email confirmation)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.agents/skills/ai-daily/server/check-replies.sh
+TimeoutStartSec=4h
+Nice=5

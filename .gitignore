@@ -1,0 +1,70 @@
+# Dependencies and local caches
+node_modules/
+.cache/
+.npm/
+.bun/
+coverage/
+.DS_Store
+Thumbs.db
+
+# Credentials and private configuration
+.env
+.env.*
+*.env
+!*.example.env
+!.env.example
+config.env*
+.npmrc
+.ssh/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+EXTEND.md
+/.baoyu-skills/*
+!/.baoyu-skills/baoyu-post-to-wechat/
+/.baoyu-skills/baoyu-post-to-wechat/*
+!/.baoyu-skills/baoyu-post-to-wechat/EXTEND.example.md
+
+# Runtime data, mail, generated articles, screenshots and browser sessions
+/.ai-daily/
+/ai-daily/
+/.local/
+/.config/
+output/
+review/
+logs/
+files/
+post-to-wechat/
+chrome-profile*/
+browser-profile*/
+Cookies
+Cookies-journal
+Login Data
+Login Data-journal
+Web Data
+DevToolsActivePort
+*.log
+*.eml
+*.mbox
+*.msg
+*.sqlite*
+*.db
+article.md
+ai-daily-????-??-??.md
+cover.png
+login-qr*.png
+publish-qr*.png
+preview.sent.json
+email-approval.json
+publication.result.json
+mail-cursor.json
+error-notice.json
+appmsgid
+cover.done
+*.tar
+*.tar.gz
+*.tgz
+*.zip

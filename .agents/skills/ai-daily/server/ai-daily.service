@@ -1,0 +1,11 @@
+[Unit]
+Description=AI News Daily Report (collect news and email a preview for approval)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+Environment=PUBLISH_MODE=preview
+ExecStart=%h/.agents/skills/ai-daily/server/run-daily.sh
+TimeoutStartSec=4h
+Nice=5
